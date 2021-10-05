@@ -1,6 +1,7 @@
 var day;
-var myArgs = process.argv.slice(2);
-let dayNumber=parseInt(myArgs[0]);
+
+const prompt = require("prompt-sync")({ sigint: true });
+let dayNumber=parseInt(prompt("enter day number "))
 
 switch (dayNumber) {
     case 1:

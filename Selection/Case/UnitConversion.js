@@ -1,9 +1,9 @@
 var convert = require('convert-units')
 
-var myArgs = process.argv.slice(2);
-let conversion=parseInt(myArgs[0]);
+const prompt = require("prompt-sync")({ sigint: true });
+let conversion=parseInt(prompt("enter choice "))
 var convertedValue;
-let number=20;
+let number=parseInt(prompt("enter value to convert "))
 
 switch (conversion) 
 {

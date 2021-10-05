@@ -1,5 +1,5 @@
-var myArgs = process.argv.slice(2);
-let number=parseInt(myArgs[0])
+const prompt = require("prompt-sync")({ sigint: true });
+let number=parseInt(prompt("enter number "))
 var numberValue;
 switch (number) 
 {
