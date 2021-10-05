@@ -1,30 +1,23 @@
 
-const number = 8;
-let isPrime = true;
+const lowerNumber =1;
+const higherNumber = 20;
 
-if (number === 1) {
-    console.log("1 is neither prime nor composite number.");
-}
+console.log(`The prime numbers between ${lowerNumber} and ${higherNumber} are:`);
 
-else if (number > 1)
- {
+for (let index = lowerNumber; index <= higherNumber; index++)
+{
+    let flag = 0;
 
-    for (let i = 2; i < number; i++) {
-        if (number % i == 0) {
-            isPrime = false;
+    for (let index2 = 2; index2 < index; index2++)
+     {
+        if (index % index2 == 0)
+         {
+            flag = 1;
             break;
         }
     }
 
-    if (isPrime) 
-    {
-        console.log(`${number} is a prime number`);
-    } else {
-        console.log(`${number} is a not prime number`);
+    if (index > 1 && flag == 0) {
+        console.log(index);
     }
-}
-
-else 
-{
-    console.log("The number is not a prime number.");
 }
