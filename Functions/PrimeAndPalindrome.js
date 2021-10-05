@@ -15,3 +15,47 @@ function getPalindrome(number)
 return reversedNumber
 }
 
+
+function isPrime(number) 
+{
+    let isPrime = true;
+
+    if (number === 1) 
+    {
+        isPrime = false;
+    }
+
+    else if (number > 1) 
+    {
+
+        for (let i = 2; i < number; i++) 
+        {
+            if (number % i == 0) 
+            {
+                isPrime = false;
+                break;
+            }
+        }
+    }
+return isPrime
+}
+
+let number = parseInt(prompt("Enter number"))
+if(isPrime(number))
+{
+    console.log("Given number is prime ");
+}
+else
+{
+    console.log("Given number is not prime ");
+}
+
+if(isPrime(getPalindrome(number)))
+{
+    console.log("Given palindrome is prime ");
+}
+else
+{
+    console.log("Given palindrome is not prime ");
+
+}
