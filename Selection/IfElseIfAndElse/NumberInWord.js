@@ -1,4 +1,5 @@
-let number=8;
+var myArgs = process.argv.slice(2);
+let number=myArgs[0]
 if(number==1)
 {
     console.log("one");

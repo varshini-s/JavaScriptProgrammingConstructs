@@ -1,4 +1,5 @@
-let number=10;
+var myArgs = process.argv.slice(2);
+let number=myArgs[0]
 var numberValue;
 if(number==1)
 {

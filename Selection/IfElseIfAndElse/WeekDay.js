@@ -1,5 +1,6 @@
 var day;
-let dayNumber=2;
+var myArgs = process.argv.slice(2);
+let dayNumber=myArgs[0];
 if (dayNumber == 0) 
 {
     day = "Sunday";
